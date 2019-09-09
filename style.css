@@ -1,5 +1,7 @@
-body {
+body, article {
     background: gray;
+    font-family: sans-serif;
+    color: white;
 }
 
 /* Wrap styling */
@@ -10,13 +12,33 @@ body {
         max-width: 1080px;
 }
 
-/* coloring */
 .wrap * {
-    background: white;
-    display: block;
+    box-sizing: border-box;
+    overflow: auto;
     margin: 1em auto;
-    padding: 10px;
+    padding: 0.25em 1em;
+    text-transform:lowercase;
 }
-.wrap:nth-child(odd) {
-    background: gray;
+
+/* container */
+.container {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 0;
+}
+section.white-bg, .wrap aside {
+    margin: 0;
+    width: 49%;
+}
+
+/* coloring */
+header, nav, aside, footer, .white-bg {
+    background: white;
+    color: gray;
+}
+
+/* sizing */
+.large {
+    font-size: 2em;
 }

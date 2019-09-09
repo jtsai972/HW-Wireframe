@@ -1,0 +1,22 @@
+body {
+    background: gray;
+}
+
+/* Wrap styling */
+.wrap {
+    margin: 2em auto;
+    text-align: center;
+    width: 90%;
+        max-width: 1080px;
+}
+
+/* coloring */
+.wrap * {
+    background: white;
+    display: block;
+    margin: 1em auto;
+    padding: 10px;
+}
+.wrap:nth-child(odd) {
+    background: gray;
+}
